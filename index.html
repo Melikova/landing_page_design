@@ -231,16 +231,29 @@
         <div>
             <form action="">
                 <div>
-                    <input type="text" placeholder="Ad Soyad">
-                    <select name="options" id="options">
-                        <option value="option_one">Mövzu</option>
-                        <option value="option_two">Option 2</option>
-                        <option value="option_three">Option 3</option>
-                        <option value="option_four">Option 4</option>
-                    </select>
+                    <label for="name">
+                        <input type="text" id="name" >
+                        <span>Ad Soyad</span>
+                    </label>
+                    <label for="options">
+                        <select name="options" id="options">
+                            <option value=""></option>
+                            <option value="option_two">Option 2</option>
+                            <option value="option_three">Option 3</option>
+                            <option value="option_four">Option 4</option>
+                        </select>
+                        <span>Movzu</span>
+                    </label>
                 </div>
-                <input type="text" placeholder="Email">
-                <textarea placeholder="Mesaj" id="w3review" name="w3review" rows="4" cols="50"></textarea>
+                <label for="email">
+                    <input type="text" id="email">
+                    <span>Email</span>
+                </label>
+                <label for="mesaj">
+                    <textarea id="mesaj" name="mesaj" rows="4" cols="50"></textarea>
+                    <span>Mesaj</span>
+                </label>
+                <div class="btn">Mesaj gonder</div>
             </form>
         </div>
     </div>
