@@ -94,6 +94,11 @@ a {
     padding-top: 100px;
     background: #21364B;
     background-image: url("images/bg.png");
+    background-size: cover;
+    /* bottom: 0px; */
+    /* right: 0px; */
+    width: 100%;
+    /* background-position: right; */
     color: #FFF;
     position: relative;
 }
