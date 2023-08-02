@@ -983,6 +983,10 @@ a {
     #besties .text {
         width: 100%;
     }
+
+    #header .main>div {
+        width: 100%;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -1020,6 +1024,10 @@ a {
     #besties .text {
         width: 100%;
     }
+
+    #header .main>div {
+        width: 100%;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -1048,6 +1056,10 @@ a {
     #contacts form div {
         gap: 12px;
     }
+
+    #header .main>div {
+        width: 100%;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -1058,6 +1070,10 @@ a {
 
     #prices>div {
         width: 28%;
+    }
+
+    #header .main>div {
+        width: 50%;
     }
 }
 
@@ -1073,5 +1089,9 @@ a {
 
     #besties .text{
         width: 718px;
+    }
+
+    #header .main>div {
+        width: 50%;
     }
 }
