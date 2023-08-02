@@ -953,6 +953,10 @@ a {
         width: 100%;
     }
 
+    #advance_1>div:first-child{
+        margin-top: 50px;
+    }
+
     #contacts{
         justify-content: center;
     }
@@ -970,14 +974,18 @@ a {
         width: 100% !important;
     }
 
-    #advance_2 img:last-child,
-    #advance_1 img:last-child {
+    #advance_2 img:last-child {
         width: 60% !important;
-        top: -25px;
+        top: -45px;
     }
 
     #advance_1 img:last-child {
-        left: 125px;
+        width: 60% !important;
+        top: -75px;
+    }
+
+    #advance_1 img:last-child {
+        left: 205px;
     }
 
     #besties .text {
@@ -1027,6 +1035,10 @@ a {
 
     #header .main>div {
         width: 100%;
+    }
+
+    #advance_1>div:first-child{
+        margin-top: 50px;
     }
 }
 
