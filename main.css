@@ -7,6 +7,10 @@ body {
     font-family: 'Poppins';
 }
 
+body{
+    background: #f8f8f8;
+}
+ 
 div {
     padding: 0;
     margin: 0;
@@ -15,6 +19,54 @@ div {
 .container {
     padding: 0 160px;
 }
+
+/* 
+.form{
+width: 632px;
+height: 418px;
+border-radius: 10px;
+background: #FFF;
+box-shadow: 10px 30px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.form .head{
+    height: 80px;
+    box-shadow: 10px 30px 50px 0px rgba(0, 0, 0, 0.05);
+    color: #21364B;
+    text-align: center;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: 1px solid #6D6A75;
+    border-radius: 10px 10px 0 0;
+    padding-top: 20px;
+}
+
+.form .text{
+    height: 59px;
+    border-radius: 10px;
+    margin: 30px 25px 0 25px;
+    color: #6D6A75;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    background: rgba(212, 212, 212, 0.20);
+}
+
+.form .btn{
+height: 60px;
+margin:70px 25px 0 25px;
+background: #FFF;
+}
+
+.icon1{
+    margin-left: 530px;
+} */
 
 ul li {
     list-style: none;
@@ -26,8 +78,11 @@ a {
 
 /* Header Container */
 #header {
+    padding-top: 100px;
     background: #21364B;
+    background-image: url("images/bg.png");
     color: #FFF;
+    margin-bottom: 50px;
     /* height: 1009px; */
 }
 
@@ -123,8 +178,8 @@ a {
 /* Advanced containers*/
 #advance_1,
 #advance_2 {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
 }
 
@@ -138,8 +193,14 @@ a {
 
 #advance_1>div,
 #advance_2>div {
+    margin-bottom: 50px;
+    /* margin-top: 50px; */
     width: 50%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
 }
 
 #advance_1 .btn,
@@ -175,7 +236,6 @@ a {
     font-size: 16px;
     font-weight: 400;
     line-height: 155%;
-    /* 24.8px */
     letter-spacing: 0.32px;
 }
 
@@ -186,31 +246,30 @@ a {
     font-size: 48px;
     font-weight: 700;
     line-height: 120%;
-    /* 57.6px */
     letter-spacing: -0.48px;
     margin-bottom: 16px;
 }
 
 #advance_1 img:first-child {
-    position: absolute;
-    right: 0;
+    float: right;
+    margin-top: 50px;
 }
 
 #advance_1 img:last-child {
     position: absolute;
     left: -60px;
-    bottom: -150px;
+    bottom: -80px;
 }
 
 #advance_2 img:first-child {
-    position: absolute;
-    left: 0;
+    float: left;
+    margin-top: 50px;
 }
 
 #advance_2 img:last-child {
     position: absolute;
     right: -20px;
-    bottom: -150px;
+    bottom: -80px;
 }
 
 /* End of Advanced containers*/
@@ -252,9 +311,19 @@ a {
     margin-bottom: 50px;
 }
 
-#besties .cards {
-    display: flex;
-    gap: 50px;
+#besties .card{
+    /* border: 1px solid grey; */
+    /* margin-right: 25px; */
+}
+
+#besties .img{
+    border-radius: 30px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+
+#besties image{
+    object-fit: cover;
 }
 
 #besties .cards .price {
@@ -281,6 +350,10 @@ a {
     font-weight: 400;
     line-height: 26px;
     /* 162.5% */
+}
+
+#besties .slick-dots{
+    bottom: -50px !important;
 }
 
 /* End of Besties Container*/
@@ -512,7 +585,27 @@ a {
     border-radius: 11.25px;
     border: 0.75px solid #F0F0F3;
     background: #F6F6F6;
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    position: relative;
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#contacts form textarea{
+    padding-top: 35px;
+}
+
+#contacts form textarea::placeholder{
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.20000000298023224;
 }
 
 #contacts form input:focus,
@@ -526,9 +619,53 @@ a {
     top:-15px;
     left:15px;
     transform:translateY(30px);
-    font-size:0.825em;
     transition-duration:300ms;
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.30000001192092896;
 }
+
+#contacts form input:focus-within + span,
+#contacts form select:focus-within + span{
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 10.5px;
+    font-weight: 500;
+    top: -25px;
+    opacity: 0.30000001192092896;
+}
+
+#contacts form select{
+    padding-right:15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(images/Arrow\ -\ Down\ 2.svg);
+    background-repeat: no-repeat;
+    background-position: right 20px center, right bottom, right bottom, right bottom;
+    opacity: 0.5;   
+
+}
+
+#contacts form select option:first-child{
+    display: none;
+}
+
+#contacts form select option{
+    font-size: 14px;
+    color: #808080;
+}
+
+#contacts form input:not(:placeholder-shown) + span,
+#contacts form select:not([value=""]) ~ span{
+    font-size: 10.5px;
+    font-weight: 500;
+    top: -25px;
+    opacity: 0.30000001192092896;
+}
+
 
 #contacts form label{
     position: relative;
@@ -553,7 +690,16 @@ a {
     font-weight: 600;
     margin-top: 15px;
     width: fit-content;
-    justify-self: right;
+    align-self: end;
+    cursor: pointer;
+}
+
+#contacts .form-title{
+    margin-bottom: 15px;
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 22.5px;
+    font-weight: 500;
 }
 
 
@@ -671,6 +817,32 @@ a {
     margin-bottom: 20px;
 }
 
+#footer .footer-icon{
+    display: flex;
+    align-items: center;
+}
+
+#footer .footer-icon .logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: #21364B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    cursor: pointer;
+}
+
+#footer .footer-icon .logo+div{
+    margin-left:60px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
 /* End of Footer Container*/
 
 /* Copyrights Container */
@@ -765,8 +937,31 @@ a {
         width: 100%;
     }
 
+    #contacts{
+        justify-content: center;
+    }
+
     #contacts form div {
         gap: 0;
+    }
+    
+    #besties {
+        padding-top: 0px;
+    }
+
+    #advance_2 img:first-child,
+    #advance_1 img:first-child {
+        width: 100% !important;
+    }
+
+    #advance_2 img:last-child,
+    #advance_1 img:last-child {
+        width: 60% !important;
+        top: -25px;
+    }
+
+    #advance_1 img:last-child {
+        left: 125px;
     }
 }
 
@@ -787,11 +982,19 @@ a {
     #advance_1>div,
     #advance_2>div {
         width: 100%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
+    }
+
+    #contacts{
+        justify-content: center;
     }
 
     #contacts form div {
         gap: 12px;
+    }
+
+    #besties {
+        padding-top: 0px;
     }
 }
 
@@ -812,6 +1015,10 @@ a {
     #advance_1>div,
     #advance_2>div {
         width: 50%;
+    }
+
+    #contacts{
+        justify-content: center;
     }
 
     #contacts form div {
