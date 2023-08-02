@@ -311,10 +311,10 @@ a {
     margin-bottom: 50px;
 }
 
-#besties .card{
+/* #besties .card{ */
     /* border: 1px solid grey; */
     /* margin-right: 25px; */
-}
+/* } */
 
 #besties .img{
     border-radius: 30px;
@@ -963,6 +963,10 @@ a {
     #advance_1 img:last-child {
         left: 125px;
     }
+
+    #besties .text {
+        width: 100%;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -995,6 +999,10 @@ a {
 
     #besties {
         padding-top: 0px;
+    }
+
+    #besties .text {
+        width: 100%;
     }
 }
 
