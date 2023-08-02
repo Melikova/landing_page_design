@@ -547,6 +547,9 @@ a {
 
 #contacts>div:first-child {
     background: #21364B;
+    background-image: url("images/arounds.9b92b5a7.png");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
     color: white;
     width: 491px;
     height: 647px;
